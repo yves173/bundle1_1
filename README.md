@@ -1,5 +1,5 @@
 
-
+```
 $ git init
 
 hint: Using 'master' as the name for the initial branch. This default branch name
@@ -62,3 +62,4 @@ Switched to branch 'dev'
 $ git branch -d test
  
 Deleted branch test (was f9aead7).
+```
