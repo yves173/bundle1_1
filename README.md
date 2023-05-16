@@ -1,6 +1,7 @@
 
 
 $ git init
+
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
@@ -18,11 +19,13 @@ $ git branch -m main
 $ touch README.md
  
 $ ls
+ 
 index.html  README.md
  
 $ git add .
  
 $ git commit -m "bundle version 1.1"
+ 
 [main (root-commit) f9aead7] bundle version 1.1
  2 files changed, 101 insertions(+)
  create mode 100644 README.md
@@ -31,6 +34,7 @@ $ git commit -m "bundle version 1.1"
 $ git remote add origin https://github.com/yves173/bundle1_1.git
  
 $ git push -u origin main
+ 
 Username for 'https://github.com': yves173
 Password for 'https://yves173@github.com': 
 Enumerating objects: 4, done.
@@ -44,14 +48,18 @@ To https://github.com/yves173/bundle1_1.git
 Branch 'main' set up to track remote branch 'main' from 'origin'.
  
 $ git checkout -b dev 
+ 
 Switched to a new branch 'dev'
  
 $ git checkout -b test
+ 
 Switched to a new branch 'test'
  
 $ git checkout dev 
+ 
 Switched to branch 'dev'
  
 $ git branch -d test
+ 
 Deleted branch test (was f9aead7).
 $ 
