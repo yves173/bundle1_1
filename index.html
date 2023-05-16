@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+            font-size: 45px;
+            min-height: 100vh;
+            width: 100%;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+        }
+        
+        [class ^="block-"] {
+            display: flex;
+            height: 25vh;
+            gap: 2vh;
+        }
+        
+        [class ^="box-"] {
+            border: 3px solid rgb(141, 198, 248);
+            display: flex;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .block-2 {
+            height: 50vh;
+        }
+        
+        .block-1,
+        .block-3 {
+            height: 20vh;
+        }
+        
+        .box-1,
+        .box-5 {
+            flex-basis: 100%;
+        }
+        
+        .box-2,
+        .box-4 {
+            flex-basis: 15%;
+        }
+        
+        .box-3 {
+            flex-basis: 70%;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .block-2 {
+                flex-direction: column;
+            }
+            .block-1,
+            .block-3 {
+                height: 15vh;
+            }
+            .box-2 {
+                display: none;
+            }
+            .box-4 {
+                flex-basis: 30%;
+            }
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="block-1">
+        <div class="box-1">A</div>
+    </div>
+    <div class="block-2">
+        <div class="box-2">B</div>
+        <div class="box-3">C</div>
+        <div class="box-4">D</div>
+    </div>
+    <div class="block-3">
+        <div class="box-5">E</div>
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
