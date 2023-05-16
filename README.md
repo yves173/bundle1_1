@@ -62,4 +62,3 @@ Switched to branch 'dev'
 $ git branch -d test
  
 Deleted branch test (was f9aead7).
-$ 
