@@ -12,7 +12,9 @@ hint: 'development'. The just-created branch can be renamed via this command:
 hint: 
 hint: 	git branch -m <name>
 Initialized empty Git repository in /home/green/Desktop/Magnun Opus/the gym/git projects/bundle 1/exercise 1/.git/
+ 
 $ git branch -m main
+ 
 $ touch README.md
 $ ls
 index.html  README.md
